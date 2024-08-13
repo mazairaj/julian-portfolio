@@ -1,0 +1,19 @@
+.cursor {
+    display: inline-block;
+    width: 2px; /* Thicker cursor */
+    height: 1em; /* Match the height of the text */
+    background-color: currentColor;
+    margin-left: 2px; /* Add slight padding to the left */
+    animation: blink 1s step-end infinite;
+    align-self: center; /* Center align the cursor */
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
