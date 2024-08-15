@@ -176,7 +176,7 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gao-6">
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -184,7 +184,7 @@ const Resume = () => {
           </TabsList>
           <div className="min-h-[70px] w-full">
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center">
+              <div className="flex flex-col gap-[30px] text-center items-center">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
