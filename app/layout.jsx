@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -20,6 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={jetbrainsMono.className}>
         <Header />
         <StairTransitions />
