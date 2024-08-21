@@ -30,8 +30,8 @@ const YourComponent = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at crafting elegant digital experiences and 
-              I am an expert in React / Angualar and skilled in all 
-              major technologies across the frontend web stack.
+              I am an expert in React / Angualar and skilled in most 
+              technologies across the frontend stack.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a

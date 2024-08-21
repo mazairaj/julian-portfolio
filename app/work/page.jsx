@@ -28,7 +28,7 @@ const projects = [
     stack: [
       {name: "Angular"}, {name: "Java Spring"}, {name: "SQL"}, {name: "AI/ML APIs"}
     ],
-    image: "/assets/slide1.png",
+    image: "/assets/slide1.webp",
     live: '',
     github: ''
   },
@@ -40,7 +40,7 @@ const projects = [
     stack: [
       {name: "React"}, {name: "Next.js"}, {name: "Tailwind CSS"}, {name: "Node.js"}
     ],
-    image: "/assets/slide2.png",
+    image: "/assets/slide2.webp",
     live: '',
     github: ''
   },
@@ -52,7 +52,7 @@ const projects = [
     stack: [
       {name: "Python"}, {name: "Oracle Heatwave"}, {name: "AI/ML APIs"}
     ],
-    image: "/assets/slide3.png",
+    image: "/assets/slide3.webp",
     live: '',
     github: ''
   },
