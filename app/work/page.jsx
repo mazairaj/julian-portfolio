@@ -28,7 +28,7 @@ const projects = [
     stack: [
       {name: "Angular"}, {name: "Java Spring"}, {name: "SQL"}, {name: "AI/ML APIs"}
     ],
-    image: "https://picsum.photos/300",
+    image: "/assets/slide1.png",
     live: '',
     github: ''
   },
@@ -38,9 +38,9 @@ const projects = [
     title: "Crafting Seamless UX Across Platforms",
     description: "My passion for front-end engineering has driven me to create intuitive, responsive interfaces that prioritize user experience. From enterprise-level applications to consumer-facing platforms, my work ensures that products are not only functional but also delightful to use.",
     stack: [
-      {name: "React"}, {name: "Next.js"}, {name: "Tailwind CSS"}
+      {name: "React"}, {name: "Next.js"}, {name: "Tailwind CSS"}, {name: "Node.js"}
     ],
-    image: "https://picsum.photos/300",
+    image: "/assets/slide2.png",
     live: '',
     github: ''
   },
@@ -52,22 +52,22 @@ const projects = [
     stack: [
       {name: "Python"}, {name: "Oracle Heatwave"}, {name: "AI/ML APIs"}
     ],
-    image: "https://picsum.photos/300",
+    image: "/assets/slide3.png",
     live: '',
     github: ''
   },
-  {
-    num: "04",
-    category: "Music Tech",
-    title: "Bridging Creativity and Innovation",
-    description: "With a deep-seated passion for music and technology, I aim to build tools that empower artists and creators. By combining my technical skills with a love for music, I strive to innovate within the creative industries, ensuring that technology enhances rather than hinders the artistic process.",
-    stack: [
-      {name: "JavaScript"}, {name: "React"}, {name: "Node.js"}
-    ],
-    image: "https://picsum.photos/300",
-    live: '',
-    github: ''
-  }
+  // {
+  //   num: "04",
+  //   category: "Music Tech",
+  //   title: "Bridging Creativity and Innovation",
+  //   description: "With a deep-seated passion for music and technology, I aim to build tools that empower artists and creators. By combining my technical skills with a love for music, I strive to innovate within the creative industries, ensuring that technology enhances rather than hinders the artistic process.",
+  //   stack: [
+  //     {name: "JavaScript"}, {name: "React"}, {name: "Node.js"}
+  //   ],
+  //   image: "/assets/progressdash_sd.png",
+  //   live: '',
+  //   github: ''
+  // }
 ];
 
 const Work = () => {
@@ -91,7 +91,7 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-[1.2] text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.title}
               </h2>
               <p className="text-white/60">
@@ -156,9 +156,10 @@ const Work = () => {
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full">
-                      <Image 
+                      <Image
+                        layout="fill" 
+                        objectFit="contain"
                         src={project.image} 
-                        fill 
                         className="object.cover"
                         alt="" 
                       />

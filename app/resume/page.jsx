@@ -8,12 +8,14 @@ import {
   FaReact,
   FaAngular,
   FaFigma,
-  FaNodeJs
+  FaNodeJs,
+  FaAws
 } from "react-icons/fa";
 
 import {
   SiTailwindcss,
-  SiNextdotjs
+  SiNextdotjs,
+  SiFlutter,
 } from "react-icons/si"
 
 import { 
@@ -78,22 +80,22 @@ const experience = {
     {
       company: "SmarterD",
       position: "Lead Frontend Engineer",
-      duration: "2017 - present"
+      duration: "2020 - present"
     },
     {
       company: "SmarterD",
-      position: "Lead Frontend Engineer",
-      duration: "2017 - present"
+      position: "JR Frontend Engineer",
+      duration: "2017 - 2020"
     },    
     {
-      company: "E-commerce Startup",
+      company: "Travel Startup",
       position: "Fullstack Engineer",
       duration: "2017"
     },
     {
-      company: "E-commerce Startup",
+      company: "Mobile App Development",
       position: "Fullstack Engineer",
-      duration: "2017"
+      duration: "2016-2017"
     }
   ]
 }
@@ -133,7 +135,7 @@ const skills = {
     },
     {
       icon: <SiTailwindcss />,
-      name: "html 5"
+      name: "Tailwind CSS"
     },
     {
       icon: <FaNodeJs />,
@@ -142,6 +144,14 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "figma"
+    },
+    {
+      icon: <SiFlutter />,
+      name: "flutter"
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS"
     },
   ]
 }
