@@ -22,11 +22,11 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe voluptatem voluptate accusantium optio magni perspiciatis expedita? Consequuntur accusamus esse quisquam voluptatum architecto modi neque debitis, distinctio ab dolores necessitatibus.",
+    category: "Cybersecurity",
+    title: "SmarterD: IT & Security Management Made Easy",
+    description: "At SmarterD, I spearheaded the development of a B2B SaaS platform, seamlessly integrating ITSM and GRC for SMBs. My leadership ensured the delivery of advanced features like dashboards, risk assessments, and AI-driven automation, empowering clients to manage IT security with unprecedented efficiency.",
     stack: [
-      {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}
+      {name: "Angular"}, {name: "Java Spring"}, {name: "SQL"}, {name: "AI/ML APIs"}
     ],
     image: "https://picsum.photos/300",
     live: '',
@@ -34,11 +34,11 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe voluptatem voluptate accusantium optio magni perspiciatis expedita? Consequuntur accusamus esse quisquam voluptatum architecto modi neque debitis, distinctio ab dolores necessitatibus.",
+    category: "Frontend",
+    title: "Crafting Seamless UX Across Platforms",
+    description: "My passion for front-end engineering has driven me to create intuitive, responsive interfaces that prioritize user experience. From enterprise-level applications to consumer-facing platforms, my work ensures that products are not only functional but also delightful to use.",
     stack: [
-      {name: "React Native" }, {name: "Node.js"}, {name: "MongoDb"}
+      {name: "React"}, {name: "Next.js"}, {name: "Tailwind CSS"}
     ],
     image: "https://picsum.photos/300",
     live: '',
@@ -46,29 +46,30 @@ const projects = [
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe voluptatem voluptate accusantium optio magni perspiciatis expedita? Consequuntur accusamus esse quisquam voluptatum architecto modi neque debitis, distinctio ab dolores necessitatibus.",
+    category: "AI/ML",
+    title: "Transforming Data with AI-Driven Automation",
+    description: "I am committed to leveraging AI and ML technologies to revolutionize data processing and decision-making. My work at SmarterD involved integrating cutting-edge AI/ML APIs, automating complex tasks, and enabling clients to harness vast datasets for smarter, faster decisions.",
     stack: [
-      {name: "Next.js"}, {name: "Tailwind.css"}
+      {name: "Python"}, {name: "Oracle Heatwave"}, {name: "AI/ML APIs"}
     ],
     image: "https://picsum.photos/300",
     live: '',
     github: ''
   },
-  // {
-  //   num: "01",
-  //   category: "frontend",
-  //   title: "project 1",
-  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe voluptatem voluptate accusantium optio magni perspiciatis expedita? Consequuntur accusamus esse quisquam voluptatum architecto modi neque debitis, distinctio ab dolores necessitatibus.",
-  //   stack: [
-  //     {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}
-  //   ],
-  //   image: "https://picsum.photos/300",
-  //   live: '',
-  //   github: ''
-  // }
-]
+  {
+    num: "04",
+    category: "Music Tech",
+    title: "Bridging Creativity and Innovation",
+    description: "With a deep-seated passion for music and technology, I aim to build tools that empower artists and creators. By combining my technical skills with a love for music, I strive to innovate within the creative industries, ensuring that technology enhances rather than hinders the artistic process.",
+    stack: [
+      {name: "JavaScript"}, {name: "React"}, {name: "Node.js"}
+    ],
+    image: "https://picsum.photos/300",
+    live: '',
+    github: ''
+  }
+];
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
@@ -91,7 +92,7 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               <p className="text-white/60">
                 {project.description}
