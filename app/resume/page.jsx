@@ -89,7 +89,7 @@ const experience = {
     },    
     {
       company: "Travel Startup",
-      position: "Fullstack Engineer",
+      position: "Lead React Native Engineer",
       duration: "2017"
     },
     {
