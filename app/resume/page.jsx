@@ -57,7 +57,7 @@ const about = {
       fieldValue: "julian.mazaira@gmail.com"
     },
     {
-      fieldName: "Locatio",
+      fieldName: "Location",
       fieldValue: "Miami, FL"
     },
     {
