@@ -205,7 +205,7 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
             {/* Download Button */}
             <a 
-              href="/assets/resume/FrontEnd-Resume_2024_V2.pdf"
+              href="/assets/resume/JulianBuilds_Resume.pdf"
               download="Resume_Julian_Mazaira.pdf"
               className="mt-6 xl:w-full flex justify-center inline-flex items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-accent border border-accent rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm"
             >
