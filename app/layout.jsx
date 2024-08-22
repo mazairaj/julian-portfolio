@@ -23,7 +23,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <title>Julian Mazaira's Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Julian Mazaira's portfolio showcasing web development projects and expertise." />
+        <meta name="keywords" content="web development, portfolio, Julian Mazaira, React, React Native, NextJS, Angular, TailwindCSS, Node.js" />
+        <meta name="author" content="Julian Mazaira" />
+        <meta property="og:title" content="Julian Mazaira's Frontend Engineer and Fullstack Developer Portfolio" />
+        <meta property="og:description" content="Showcasing web development projects and expertise by Julian Mazaira." />
+        <meta property="og:image" content="/images/portfolio-thumbnail.png" />
+        <meta property="og:url" content="https://julianbuilds.com" />
       </Head>
       <body className={jetbrainsMono.className}>
         <Header />
