@@ -209,7 +209,7 @@ const Resume = () => {
               download="Resume_Julian_Mazaira.pdf"
               className="mt-6 xl:w-full flex justify-center inline-flex items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-accent border border-accent rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm"
             >
-                <button className="w-full">Download Resume</button>
+                <button aria-label="Download Resume" className="w-full">Download Resume</button>
             </a>
           </TabsList>
           <div className="min-h-[70px] w-full">

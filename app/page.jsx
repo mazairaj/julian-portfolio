@@ -29,9 +29,9 @@ const YourComponent = () => {
               <span className="text-accent">Julian Mazaira</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and 
-              I am an expert in React / Angualar and skilled in most 
-              technologies across the frontend stack.
+            I excel at crafting elegant digital experiences, 
+            with expertise in React and Angular and strong skills 
+            across the frontend stack.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
@@ -43,7 +43,7 @@ const YourComponent = () => {
                   variant="outline"
                   size="lg"
                   className="uppercase flex items-center gap-2"
-
+                  aria-label="Download CV"
                 >
                   <span>Download CV</span>
                   <FiDownload className="text-xl"/>

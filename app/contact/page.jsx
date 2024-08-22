@@ -119,7 +119,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button size="md" className="max-w-40" type="submit">Send message</Button>
+              <Button size="md" className="max-w-40" type="submit" aria-label="send-message">Send message</Button>
             </form>
           </div>
           {/* info */}
