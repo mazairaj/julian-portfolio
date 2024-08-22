@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Julian Mazaira" />
         <meta property="og:title" content="Julian Mazaira's Frontend Engineer and Fullstack Developer Portfolio" />
         <meta property="og:description" content="Showcasing web development projects and expertise by Julian Mazaira." />
-        <meta property="og:image" content="/images/portfolio-thumbnail.png" />
+        <meta property="og:image" content="/favicon.ico" />
         <meta property="og:url" content="https://julianbuilds.com" />
       </Head>
       <body className={jetbrainsMono.className}>
