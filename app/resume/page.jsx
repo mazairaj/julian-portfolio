@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import { 
   FaHtml5, 
   FaCss3, 
@@ -199,6 +199,14 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 relative">
+            <Image 
+              src="/assets/logos/jb_transparent_green.png"
+              alt="JB"
+              height="250"
+              width="250"
+              className="self-center xl:order-last" // Tailwind classes for align-self center and order
+              style={{ objectFit: 'contain' }} // Using inline style for objectFit
+            />
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -209,7 +217,7 @@ const Resume = () => {
               download="Resume_Julian_Mazaira.pdf"
               className="mt-6 xl:w-full flex justify-center inline-flex items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-accent border border-accent rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm"
             >
-                <button aria-label="Download Resume" className="w-full">Download Resume</button>
+              <button aria-label="Download Resume" className="w-full">Download Resume</button>
             </a>
           </TabsList>
           <div className="min-h-[70px] w-full">
