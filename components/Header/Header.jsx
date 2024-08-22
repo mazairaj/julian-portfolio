@@ -30,7 +30,7 @@ export default function Header() {
                 </Link> */}
                 <Link href="/" className="flex gap-6">
                     <Image 
-                        src="/assets/logos/julianbuilds_225x225px.png"
+                        src="/assets/logos/julianbuilds_120x120px.png"
                         alt="JB"
                         height="40"
                         width="40"
