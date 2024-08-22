@@ -91,7 +91,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit}>
               <h3 className="text-4xl text-accent">{`Let's work together`}</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula magna vitae.
+              Whether you have a project in mind, need some expert advice, or just want to chat about the latest in tech and UI/UX design, I'm here to help. Feel free to reach out, and I'll get back to you as soon as possible!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="text" name="firstname" placeholder="Firstname" value={formData.firstname} onChange={handleChange} />
