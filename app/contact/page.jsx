@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import emailjs from 'emailjs-com';
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -24,14 +25,27 @@ const info = [
 ];
 
 const Contact = () => {
+  const searchParams = useSearchParams();
+  const service = searchParams.get('service');
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
     email: '',
     phone: '',
-    service: '',
+    service: service || '',
     message: ''
   });
+
+  useEffect(() => {
+    if (service) {
+      console.log(service)
+      setFormData(prevState => ({
+        ...prevState,
+        service: service
+      }));
+      console.log(formData)
+    }
+  }, [service]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -99,7 +113,7 @@ const Contact = () => {
                 <Input type="email" name="email" placeholder="Email address" value={formData.email} onChange={handleChange} />
                 <Input type="text" name="phone" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
               </div>
-              <Select onValueChange={handleSelectChange}>
+              <Select value={formData.service} onValueChange={handleSelectChange}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -109,6 +123,7 @@ const Contact = () => {
                     <SelectItem value="Web Development">Web Development</SelectItem>
                     <SelectItem value="UI/UX">UI/UX</SelectItem>
                     <SelectItem value="Technical Consulting">Technical Consulting</SelectItem>
+                    <SelectItem value="Product Management">Product Management</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

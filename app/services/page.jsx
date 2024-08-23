@@ -53,28 +53,28 @@ const technicalConsultingSkills = [
 const services = [
   {
     num: '01',
-    href: '/',
+    href: '/contact?service=Web Development',
     title: 'Fullstack Web Development',
     description: "Building comprehensive web applications, handling both frontend and backend development using modern technologies.",
     skills: fullstackWebDevelopmentSkills
   },
   {
     num: '02',
-    href: '/',
+    href: '/contact?service=UI/UX',
     title: `UI/UX Design \n&  FE Engineering`,
     description: "Crafting intuitive and engaging user interfaces and experiences. This involves user research, wireframing, prototyping, and user testing to create designs that meet user needs and business goals.",
     skills: uiUxDesignAndFrontendEngineeringSkills
   },
   {
     num: '03',
-    href: '/',
+    href: '/contact?service=Product Management',
     title: 'Product Management',
     description: "Leading product development from concept to launch. This includes gathering requirements, creating roadmaps, managing development teams, and ensuring that the product meets both user needs and business objectives.",
     skills: productManagementSkills
   },
   {
     num: '04',
-    href: '/',
+    href: '/contact?service=Technical Consulting',
     title: 'Technical Consulting',
     description: "Providing expert advice on technology strategy, architecture, and best practices. This service helps businesses make informed decisions about their tech stack, development processes, and product strategies.",
     skills: technicalConsultingSkills
