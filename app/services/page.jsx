@@ -49,7 +49,6 @@ const technicalConsultingSkills = [
   "Technical Documentation"
 ];
 
-
 const services = [
   {
     num: '01',
