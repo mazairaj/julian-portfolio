@@ -52,8 +52,8 @@ const technicalConsultingSkills = [
 const services = [
   {
     num: '01',
-    href: '/contact',
-    title: 'Fullstack Web Development',
+    href: '/contact?service=Web Development',
+    title: 'Fullstack Development',
     description: "Building comprehensive web applications, handling both frontend and backend development using modern technologies.",
     skills: fullstackWebDevelopmentSkills
   },
