@@ -1,7 +1,6 @@
 "use client";
 
-import React, { Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React from 'react';
 import ContactForm from './ContactForm';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
@@ -12,10 +11,7 @@ const info = [
   { icon: <FaMapMarkerAlt />, title: 'Location', description: 'Miami, FL (Silicon Shores ;) )' },
 ];
 
-const Contact = () => {
-  const searchParams = useSearchParams();
-  const service = searchParams.get('service');
-
+const ContactPage = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -29,9 +25,7 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ContactForm initialService={service} />
-            </Suspense>
+            <ContactForm />
           </div>
           {/* info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
@@ -55,4 +49,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

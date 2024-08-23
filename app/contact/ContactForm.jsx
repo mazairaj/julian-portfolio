@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import emailjs from 'emailjs-com';
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -15,24 +16,35 @@ import {
   SelectValue
 } from "../../components/ui/select";
 
-const ContactForm = ({ initialService }) => {
+const ContactForm = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FormContent />
+    </Suspense>
+  );
+};
+
+const FormContent = () => {
+  const searchParams = useSearchParams();
+  const service = searchParams.get('service');
+
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
     email: '',
     phone: '',
-    service: initialService || '',
+    service: service || '',
     message: ''
   });
 
   useEffect(() => {
-    if (initialService) {
+    if (service) {
       setFormData(prevState => ({
         ...prevState,
-        service: initialService
+        service: service
       }));
     }
-  }, [initialService]);
+  }, [service]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
